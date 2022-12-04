@@ -8,6 +8,7 @@ export const AddTableForm = () => {
     const dispatch = useDispatch();
     let navigate = useNavigate();
     
+    
     const handleSubmit = table => {
         dispatch(addTableRequest(table));
         navigate('/')

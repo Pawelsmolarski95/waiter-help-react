@@ -1,14 +1,14 @@
 /* global  */
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('build/db/app.json');
-const middlewares = jsonServer.defaults({
+import { create, router as _router, defaults, rewriter } from 'json-server';
+const server = create();
+const router = _router('build/db/app.json');
+const middlewares = defaults({
   static: 'build',
   noCors: true
 });
 const port = process.env.PORT || 3131;
 server.use(middlewares);
-server.use(jsonServer.rewriter({
+server.use(rewriter({
   '/api/*': '/$1'
 }));
 

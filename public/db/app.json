@@ -57,12 +57,12 @@
       "maxPeople": "10"
     },
     {
+      "id": "S5JcKoc",
       "status": "Free",
       "tableNumber": "33",
-      "bill": "33",
+      "bill": "34",
       "people": "10",
-      "maxPeople": "10",
-      "id": "S5JcKoc"
+      "maxPeople": "10"
     }
   ],
   "status": [

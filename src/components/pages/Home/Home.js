@@ -20,6 +20,7 @@ const Home = () => {
                     </Link>
                 </Col>
             </Row>
+            
             {/* here we will map on each element in tables and create SingleTable */}
             {tables.map((table,index) => (
                 <SingleTable
