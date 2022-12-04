@@ -70,12 +70,14 @@ const TableForm = ({ action, actionText, ...props }) => {
                     </Col>
                     {statusError && <small className="d-block form-text text-danger mt-2">Please choose status</small>}
                 </Form.Group>
+                
                 <Form.Group as={Row} className="mb-3">
                     <Form.Label column sm="1"><b>People:</b></Form.Label>
                     <Col sm="1">
                         <Form.Control
                             {...register("people", {required: true})}
-                            value={people}
+                            value={
+                                status !== 'Free' ? people : 0}
                             type="text"
                             onChange={e => setPeople(e.target.value)}
                         />
@@ -97,7 +99,7 @@ const TableForm = ({ action, actionText, ...props }) => {
                     <Col sm="1">
                         <Form.Control
                             {...register("bill", {required: true})}
-                            value={bill}
+                            value={ status !== 'Busy' ? bill : 0}
                             type="number"
                             onChange={e => setBill(e.target.value)}
                         /> 
