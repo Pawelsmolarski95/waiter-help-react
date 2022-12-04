@@ -1,9 +1,13 @@
 import { Button, Col, Row } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { getAllTables } from "../../../redux/tableReducer";
+import SingleTable from "../../features/SingleTable/SingleTable";
 
 const Home = () => {
    //here we will download the info about all tables from redux using useSelector
-    
+   const tables = useSelector(getAllTables) 
+   
     return (
         <div>
             <Row className="align-items-center justify-content-end">
@@ -17,8 +21,15 @@ const Home = () => {
                 </Col>
             </Row>
             {/* here we will map on each element in tables and create SingleTable */}
-            <SingleTable/>
-            
+            {tables.map((table,index) => (
+                <SingleTable
+                    key={index}
+                    number={table.tableNumber}
+                    status={table.status}
+                    id={table.id}
+                    
+                />
+            ))}
         </div>
       );
 }

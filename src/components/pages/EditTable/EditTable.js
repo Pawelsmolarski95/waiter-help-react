@@ -1,3 +1,4 @@
+import TableForm from "../../features/TableForm/TableForm";
 
 const EditTable = () => {
     return (

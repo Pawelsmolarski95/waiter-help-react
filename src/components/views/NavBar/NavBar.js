@@ -7,7 +7,7 @@ const NavBar = () => {
             <Container>
             <Navbar.Brand href="#home">waiterApp</Navbar.Brand>
                 <Nav className="justifly-content-end">
-                    <Nav.Link as={NavLink} to="/">
+                    <Nav.Link as={NavLink} to='/'>
                         Home
                     </Nav.Link> 
                 </Nav>

@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Button, Col, Row } from "react-bootstrap";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { deleteTableRequest } from "../../../redux/tableReducer";
 import ModalDelete from "../ModalDelete/ModalDelete";
 
 const SingleTable = ({number, status, id}) => {
     
+    const dispatch = useDispatch()
     // Modal -- using state to close and open modal
     const [showModal, setShowModal] = useState(false)
     const handleShowModal = () => {
@@ -17,7 +20,7 @@ const SingleTable = ({number, status, id}) => {
     // dispatch deleteTableRequest with arg "id"  we pass the "id" to redux
     const handleRemove = e => {
         e.preventDefault();
-        dispatch(deleteTableRequest(id));
+        dispatch(deleteTableRequest( id ));
         handleCloseModal();
     }
     
