@@ -1,14 +1,6 @@
 {
   "tables": [
     {
-      "id": "2",
-      "status": "Free",
-      "tableNumber": "2",
-      "bill": "294",
-      "people": "3",
-      "maxPeople": "4"
-    },
-    {
       "id": "3",
       "people": "1",
       "maxPeople": "3",
