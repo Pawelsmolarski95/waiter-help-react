@@ -54,7 +54,7 @@ export const deleteTableRequest = (tableId) => {
                 'Content-Type': 'application/json'
             }, 
         };
-        fetch('http://localhost:3131/api/tables/' + tableId, options)
+        fetch(`API_URL + ${tableId}`, options)
             .then(() => dispatch(removeTable(tableId)))
     }
 };
