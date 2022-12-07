@@ -1,0 +1,66 @@
+{
+  "tables": [
+    {
+      "id": "3",
+      "people": "1",
+      "maxPeople": "3",
+      "bill": "120",
+      "status": "Free",
+      "tableNumber": "3"
+    },
+    {
+      "id": "4",
+      "status": "Reserved",
+      "tableNumber": "4",
+      "bill": "123",
+      "people": "1",
+      "maxPeople": "2"
+    },
+    {
+      "id": "5",
+      "people": "5",
+      "maxPeople": "9",
+      "bill": "200",
+      "status": "Busy",
+      "tableNumber": "5"
+    },
+    {
+      "status": "Busy",
+      "tableNumber": "6",
+      "bill": 0,
+      "people": "",
+      "maxPeople": "3",
+      "id": "7hKh-oP"
+    },
+    {
+      "status": "Busy",
+      "tableNumber": "3",
+      "bill": "20",
+      "people": "1",
+      "maxPeople": "10",
+      "id": "H-vAPi9"
+    },
+    {
+      "id": "pATGB2a",
+      "status": "Busy",
+      "tableNumber": "20",
+      "bill": "9",
+      "people": "10",
+      "maxPeople": "10"
+    },
+    {
+      "id": "S5JcKoc",
+      "status": "Free",
+      "tableNumber": "33",
+      "bill": "34",
+      "people": "10",
+      "maxPeople": "10"
+    }
+  ],
+  "status": [
+    "Busy",
+    "Cleaning",
+    "Free",
+    "Reserved"
+  ]
+}
